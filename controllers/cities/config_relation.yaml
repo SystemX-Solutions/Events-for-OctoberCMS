@@ -1,0 +1,10 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+clubs:
+    label: State
+    list: @/plugins/xavier/events/models/club/columns.yaml
+    form: @/plugins/xavier/events/models/club/fields.yaml
+    # toolbar:
+    #     buttons: relation_toolbar

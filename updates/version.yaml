@@ -1,4 +1,7 @@
 1.0.0:
   - First version of Events
   - create_cities_table.php
+  - create_clubs_table.php
+  - create_events_table.php
+  - seed_all_tables.php
 

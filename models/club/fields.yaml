@@ -1,0 +1,14 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  title:
+    label: Название
+
+  description:
+    label: Описание (необязательно)
+
+  confirmed:
+      label: Опубликованно
+      type: switch
