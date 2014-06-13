@@ -1,5 +1,6 @@
 <?php namespace XavieR\Events;
 
+use Lang;
 use Backend;
 use Controller;
 use System\Classes\PluginBase;
@@ -30,30 +31,42 @@ class Plugin extends PluginBase
      *
      * @return array
      */
-    public function registerNavigation()
+   /* public function registerNavigation()
     {
         return [
             'events' => [
                 'label' => 'Афиша',
-                'url'   => Backend::url('xavier/events/events'),
+                'url'   => Backend::url('xavier/events/cities'),
                 'icon'  => 'icon-calendar',
                 'order' => 500,
                 'sideMenu' => [
                     'edit' => [
-                        'label'       => 'Edit Menus',
+                        'label'       => 'Города',
                         'icon'        => 'icon-list-alt',
-                        'url'         => Backend::url('xavier/events/events')
+                        'url'         => Backend::url('xavier/events/cities')
                     ],
                     /*'reorder' => [
                         'label' => 'Reorder Menus',
                         'icon' => 'icon-exchange',
                         'url' => Backend::url('benfreke/menumanager/menus/reorder')
-                    ]*/
+                    ]
                 ]
             ]
         ];
+    }*/
+    public function registerSettings()
+    {
+        return [
+            'location' => [
+                'label'       => Lang::get('xavier.events::lang.setting.label'),
+                'description' => Lang::get('xavier.events::lang.setting.desc'),
+                'category'    => Lang::get('xavier.events::lang.setting.category'),
+                'icon'        => 'icon-globe',
+                'url'         => Backend::url('xavier/events/cities'),
+                'sort'        => 100
+            ]
+        ];
     }
-
     /**
      * Register the front end component
      *

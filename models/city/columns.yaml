@@ -1,0 +1,17 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+  title:
+    label: Город
+    searchable: true
+
+  description:
+    label: Описание
+    searchable: true
+
+  confirmed:
+      label: Опубликованно
+      type: switch
+      options: editable

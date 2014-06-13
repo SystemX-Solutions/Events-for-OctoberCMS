@@ -1,0 +1,32 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Город
+
+# Model Form Field configuration
+form: @/plugins/xavier/events/models/city/fields.yaml
+
+# Model Class name
+modelClass: XavieR\Events\Models\City
+
+# Default redirect location
+defaultRedirect: xavier/events/cities
+
+# Create page
+create:
+    title: Добавление города
+    redirect: xavier/events/cities/update/:id
+    redirectClose: xavier/events/cities
+
+# Update page
+update:
+    title: Изменение города
+    redirect: xavier/events/cities
+    redirectClose: xavier/events/cities
+
+# Preview page
+preview:
+    title: Предпросмотр
+

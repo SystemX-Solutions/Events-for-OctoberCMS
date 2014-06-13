@@ -1,0 +1,33 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+# Model List Column configuration
+list: @/plugins/xavier/events/models/city/columns.yaml
+
+# Model Class name
+modelClass: XavieR\Events\Models\City
+
+# List Title
+title: Управление городами
+
+# Link URL for each record
+recordUrl: xavier/events/cities/update/:id
+
+# Message to display if the list is empty
+noRecordsMessage: backend::lang.list.no_records
+
+# Records to display per page
+recordsPerPage: 50
+showSetup: true
+showTree: false
+
+showCheckboxes: true
+# Toolbar widget configuration
+toolbar:
+    # Partial for toolbar buttons
+    buttons: list_toolbar
+
+    # Search widget configuration
+    search:
+        prompt: backend::lang.list.search_prompt
